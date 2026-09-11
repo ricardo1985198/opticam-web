@@ -2,112 +2,705 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OptiCam</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      color: #1f2937;
-    }
+  <meta
+    name="description"
+    content="OptiSuite - OptiCam, OptiRuta y OptiDuc."
+  >
 
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
+  <title>OptiSuite | Tecnología que impulsa tu trabajo</title>
 
-    header h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 20px;
-      margin-top: 15px;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 30px;
-      margin-bottom: 25px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      color: #0f172a;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #0f172a;
-      color: white;
-      margin-top: 50px;
-    }
-  </style>
+  <link
+    rel="stylesheet"
+    href="estilos.css"
+  >
 </head>
 
 <body>
 
-<header>
-  <h1>OptiCam</h1>
-  <p>Captura, escaneo y procesamiento inteligente de documentos</p>
-</header>
+  <!-- ====================================================== -->
+  <!-- NAVEGACIÓN -->
+  <!-- ====================================================== -->
 
-<main>
+  <header class="navbar">
 
-  <div class="card">
-    <h2>¿Qué es OptiCam?</h2>
-    <p>
-      OptiCam es una aplicación móvil diseñada para facilitar la captura,
-      escaneo, organización y procesamiento de imágenes y documentos.
-    </p>
-  </div>
+    <a
+      href="#inicio"
+      class="brand"
+    >
+      <div class="brand-icon">
+        ◉
+      </div>
 
-  <div class="card">
-    <h2>Funciones</h2>
-    <p>
-      Cámara optimizada, escaneo de documentos, procesamiento inteligente
-      de imágenes y creación de documentos PDF.
-    </p>
-  </div>
+      <div>
+        <strong>
+          Opti<span>Suite</span>
+        </strong>
 
-  <div class="card">
-    <h2>Contacto</h2>
-    <p>
-      Para soporte, información comercial o consultas relacionadas con
-      OptiCam, puedes comunicarte con nuestro equipo.
-    </p>
-  </div>
+        <small>
+          Tecnología que impulsa tu trabajo
+        </small>
+      </div>
+    </a>
 
-  <div class="card">
-    <h2>Privacidad</h2>
-    <p>
-      OptiCam se compromete con la protección y el tratamiento responsable
-      de la información de sus usuarios.
-    </p>
-  </div>
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#aplicaciones">Aplicaciones</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-</main>
+    <a
+      href="#aplicaciones"
+      class="download-button"
+    >
+      Descargar Apps
+    </a>
 
-<footer>
-  © 2026 OptiCam · Todos los derechos reservados
-</footer>
+  </header>
+
+
+  <!-- ====================================================== -->
+  <!-- AVISO CONFIRMACIÓN DE CORREO -->
+  <!-- ====================================================== -->
+
+  <section
+    id="emailConfirmation"
+    class="email-confirmation"
+  >
+
+    <button
+      class="close-confirmation"
+      onclick="cerrarConfirmacion()"
+      aria-label="Cerrar"
+    >
+      ×
+    </button>
+
+    <div class="confirmation-icon">
+      ✓
+    </div>
+
+    <div>
+      <h2>
+        ¡Gracias por confirmar tu correo!
+      </h2>
+
+      <p>
+        Ya completaste el primer paso para activar OptiCam.
+        Ahora debes regresar a la aplicación e ingresar con
+        tu correo y contraseña para continuar con la activación
+        de tu suscripción.
+      </p>
+
+      <button
+        class="open-app-button"
+        onclick="volverAOptiCam()"
+      >
+        VOLVER A OPTICAM Y CONTINUAR
+      </button>
+    </div>
+
+  </section>
+
+
+  <!-- ====================================================== -->
+  <!-- HERO -->
+  <!-- ====================================================== -->
+
+  <main>
+
+    <section
+      id="inicio"
+      class="hero"
+    >
+
+      <div class="hero-image-frame">
+
+        <img
+          src="héroe-bienvenida.png"
+          alt="Bienvenida a OptiSuite"
+          class="hero-image"
+        >
+
+      </div>
+
+      <div class="hero-content">
+
+        <div class="mini-title">
+          TRES APLICACIONES · UN MISMO PROPÓSITO
+        </div>
+
+        <h1>
+          Opti<span>Suite</span>
+        </h1>
+
+        <h2>
+          Tecnología que simplifica tu trabajo.
+        </h2>
+
+        <p>
+          Un ecosistema creado para capturar,
+          organizar, optimizar y transformar
+          información en resultados reales.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="#aplicaciones"
+            class="primary-button"
+          >
+            CONOCER APLICACIONES
+          </a>
+
+          <a
+            href="#contacto"
+            class="secondary-button"
+          >
+            RECIBIR NOVEDADES
+          </a>
+
+        </div>
+
+
+        <div class="hero-benefits">
+
+          <div>
+            <strong>⚡</strong>
+            <span>Más productividad</span>
+          </div>
+
+          <div>
+            <strong>⏱</strong>
+            <span>Más tiempo</span>
+          </div>
+
+          <div>
+            <strong>🛡</strong>
+            <span>Información segura</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================== -->
+    <!-- APLICACIONES -->
+    <!-- ==================================================== -->
+
+    <section
+      id="aplicaciones"
+      class="section"
+    >
+
+      <div class="section-header">
+
+        <span>
+          FAMILIA OPTISUITE
+        </span>
+
+        <h2>
+          Tres soluciones.
+          <br>
+          Un mismo propósito.
+        </h2>
+
+        <p>
+          Cada aplicación resuelve una parte diferente
+          de tu trabajo.
+        </p>
+
+      </div>
+
+
+      <div class="apps-grid">
+
+
+        <!-- OPTICAM -->
+
+        <article class="app-card opticam">
+
+          <div class="app-image-frame orange-frame">
+
+            <img
+              src="tarjeta óptica.png"
+              alt="OptiCam"
+            >
+
+          </div>
+
+          <h3>
+            Opti<span>Cam</span>
+          </h3>
+
+          <p class="app-subtitle">
+            Tu cámara profesional inteligente
+          </p>
+
+          <ul>
+            <li>Cámara optimizada con IA</li>
+            <li>Escaneo de documentos</li>
+            <li>Mejora automática de imágenes</li>
+            <li>Conversión a PDF</li>
+            <li>Marca de agua</li>
+            <li>Compartir fácilmente</li>
+          </ul>
+
+          <a
+            href="#como-funciona"
+            class="app-button orange-button"
+          >
+            CONOCER OPTICAM
+          </a>
+
+        </article>
+
+
+        <!-- OPTIRUTA -->
+
+        <article class="app-card optiruta">
+
+          <div class="app-image-frame blue-frame">
+
+            <img
+              src="optiruta-card.png"
+              alt="OptiRuta"
+            >
+
+          </div>
+
+          <h3>
+            Opti<span>Ruta</span>
+          </h3>
+
+          <p class="app-subtitle">
+            Optimiza rutas, mueve tu mundo
+          </p>
+
+          <ul>
+            <li>Optimización automática de rutas</li>
+            <li>Asignación de técnicos</li>
+            <li>Reportes y auditoría</li>
+            <li>Exportación a Excel y PDF</li>
+            <li>Google Maps</li>
+            <li>Envío por WhatsApp</li>
+          </ul>
+
+          <a
+            href="#contacto"
+            class="app-button blue-button"
+          >
+            CONOCER OPTIRUTA
+          </a>
+
+        </article>
+
+
+        <!-- OPTIDUC -->
+
+        <article class="app-card optiduc">
+
+          <div class="coming-soon">
+            PRÓXIMAMENTE
+          </div>
+
+          <div class="app-image-frame green-frame">
+
+            <img
+              src="tarjeta-optiduc.png"
+              alt="OptiDuc"
+            >
+
+          </div>
+
+          <h3>
+            Opti<span>Duc</span>
+          </h3>
+
+          <p class="app-subtitle">
+            Convierte documentos en información
+          </p>
+
+          <ul>
+            <li>Reconocimiento automático de casillas</li>
+            <li>Campos importantes rojo / verde</li>
+            <li>Ingreso por texto o voz</li>
+            <li>Interpretación de información técnica</li>
+            <li>Generación del documento final</li>
+            <li>Compartir PDF o imagen</li>
+          </ul>
+
+          <a
+            href="#contacto"
+            class="app-button green-button"
+          >
+            QUIERO SER EL PRIMERO
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================== -->
+    <!-- BENEFICIOS -->
+    <!-- ==================================================== -->
+
+    <section
+      id="beneficios"
+      class="benefits"
+    >
+
+      <div class="benefit">
+        <div>⚡</div>
+
+        <strong>
+          Más productividad
+        </strong>
+
+        <span>
+          Menos tareas repetitivas
+        </span>
+      </div>
+
+
+      <div class="benefit">
+        <div>⏱</div>
+
+        <strong>
+          Más tiempo
+        </strong>
+
+        <span>
+          Para lo realmente importante
+        </span>
+      </div>
+
+
+      <div class="benefit">
+        <div>🛡</div>
+
+        <strong>
+          Información segura
+        </strong>
+
+        <span>
+          Procesos organizados
+        </span>
+      </div>
+
+
+      <div class="benefit">
+        <div>📈</div>
+
+        <strong>
+          Mejores resultados
+        </strong>
+
+        <span>
+          Trabajo más eficiente
+        </span>
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================== -->
+    <!-- CÓMO FUNCIONA OPTICAM -->
+    <!-- ==================================================== -->
+
+    <section
+      id="como-funciona"
+      class="steps-section"
+    >
+
+      <div class="section-header">
+
+        <span>
+          ACTIVACIÓN OPTICAM
+        </span>
+
+        <h2>
+          ¿Cómo funciona?
+        </h2>
+
+      </div>
+
+
+      <div class="steps">
+
+        <div class="step">
+
+          <div class="step-number">
+            1
+          </div>
+
+          <div class="step-icon">
+            👤
+          </div>
+
+          <h3>
+            Regístrate
+          </h3>
+
+          <p>
+            Ingresa tu nombre,
+            correo y contraseña.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">
+            2
+          </div>
+
+          <div class="step-icon">
+            ✉️
+          </div>
+
+          <h3>
+            Confirma tu correo
+          </h3>
+
+          <p>
+            Revisa tu bandeja
+            y pulsa el enlace.
+          </p>
+
+        </div>
+
+
+        <div class="step highlight-step">
+
+          <div class="step-number">
+            3
+          </div>
+
+          <div class="step-icon">
+            📱
+          </div>
+
+          <h3>
+            Vuelve a OptiCam
+          </h3>
+
+          <p>
+            Regresa a la app
+            e ingresa con tu cuenta.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">
+            4
+          </div>
+
+          <div class="step-icon">
+            💳
+          </div>
+
+          <h3>
+            Activa tu suscripción
+          </h3>
+
+          <p>
+            Continúa con el pago
+            seguro en Mercado Pago.
+          </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">
+            5
+          </div>
+
+          <div class="step-icon">
+            ✓
+          </div>
+
+          <h3>
+            ¡Listo!
+          </h3>
+
+          <p>
+            Tu suscripción se activa
+            y puedes ingresar.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="important-message">
+
+        <strong>
+          IMPORTANTE:
+        </strong>
+
+        después de confirmar tu correo debes volver a
+        <strong>OptiCam</strong> e iniciar sesión para realizar
+        el siguiente paso y finalizar la activación.
+
+        <button
+          onclick="volverAOptiCam()"
+        >
+          VOLVER A OPTICAM
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==================================================== -->
+    <!-- CONTACTO -->
+    <!-- ==================================================== -->
+
+    <section
+      id="contacto"
+      class="contact-section"
+    >
+
+      <div>
+
+        <span class="mini-title">
+          MANTENTE AL DÍA
+        </span>
+
+        <h2>
+          Sé parte de lo que viene
+        </h2>
+
+        <p>
+          Recibe novedades, nuevas funciones,
+          actualizaciones y próximos lanzamientos
+          de OptiSuite.
+        </p>
+
+      </div>
+
+
+      <div class="contact-form">
+
+        <label>
+          Correo electrónico
+        </label>
+
+        <input
+          id="email"
+          type="email"
+          placeholder="Tu correo electrónico"
+        >
+
+        <button
+          onclick="registrarCorreo()"
+          class="subscribe-button"
+        >
+          SUSCRIBIRME
+        </button>
+
+
+        <div class="divider">
+          o
+        </div>
+
+
+        <label>
+          WhatsApp
+        </label>
+
+        <input
+          id="whatsapp"
+          type="tel"
+          placeholder="+57 Tu número de WhatsApp"
+        >
+
+        <button
+          onclick="abrirWhatsApp()"
+          class="whatsapp-button"
+        >
+          CONTINUAR POR WHATSAPP
+        </button>
+
+        <p id="contactMessage"></p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ====================================================== -->
+  <!-- FOOTER -->
+  <!-- ====================================================== -->
+
+  <footer>
+
+    <div class="footer-brand">
+
+      <strong>
+        Opti<span>Suite</span>
+      </strong>
+
+      <small>
+        Tecnología que impulsa tu trabajo
+      </small>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#inicio">
+        Inicio
+      </a>
+
+      <a href="#aplicaciones">
+        Aplicaciones
+      </a>
+
+      <a href="#beneficios">
+        Beneficios
+      </a>
+
+      <a href="#contacto">
+        Contacto
+      </a>
+
+    </div>
+
+
+    <div>
+      © 2026 OptiSuite
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
 
 </body>
 </html>
