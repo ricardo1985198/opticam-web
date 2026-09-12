@@ -3,7 +3,7 @@
 // OptiCam · OptiRuta · OptiDuc
 // ======================================================
 
-const OPTICAM_APP_URL = "io.supabase.opticam://auth-callback";
+const OPTICAM_APP_URL = "io.supabase.opticam://confirm-email";
 
 // ======================================================
 // AL CARGAR LA PÁGINA
